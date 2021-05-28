@@ -54,6 +54,7 @@ git push -u orgiin fixbug
 git checkout master
 git merge --no-ff fixbug
 git tag -a v0.1.x
+git push --tags
 #合并到develop
 git checkout develop
 git merge --no-ff fixbug
@@ -75,6 +76,7 @@ git push -u orgiin release
 git checkout master
 git merge --no-ff release
 git tag -a vx.x.0
+git push --tags
 #合并到develop
 git checkout develop
 git merge --no-ff release
