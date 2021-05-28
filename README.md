@@ -27,6 +27,10 @@ develop分支用于日常开发，存放最新的开发版本
 
 <img src="./gitflow.png" alt="Git Flow 流程图示" width="600" />
 
+***
+
+> **feature**
+
 feature功能分支用于开发特定功能，是从develop分支上分出来的，最后在合并进develop分支  
 可以采用feature-*的命名形式
 
@@ -42,6 +46,10 @@ git merge --no-ff feature
 git branch -d feature
 git push origin --delete feature   
 ```
+
+***
+
+> **hotfix**
 
 hotfix补丁分支用于修复bug，是从master分支上分出来的，最后在合并进master和develop分支  
 可以采用fixbug-*的命名形式
@@ -65,6 +73,10 @@ git branch -d fixbug
 git push origin --delete fixbug   
 ```
 
+***
+
+> **release**
+
 release预发布分支用于发布正式版本前测试修复bug等工作，是从develop分支上分出来的，最后合并进master和develop分支
 可以采用release-*的命名形式
 
@@ -86,6 +98,8 @@ git merge --no-ff release
 git branch -d release
 git push origin --delete release   
 ```
+
+***
 
 Git Flow 优点是清晰可控，缺点是分支过多相对复杂，需要长期维护两个分支，一般用于各种语言和框架。  
 但是现在的web项目一般都会CI/CD，这种情况下，master分支和develop分支差别不大，没必要维护两个长期分支。
