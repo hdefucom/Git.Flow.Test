@@ -25,6 +25,8 @@ develop分支用于日常开发，存放最新的开发版本
 > 2. hotfix补丁分支
 > 3. release预发布分支
 
+<img src="./gitflow.png" alt="Git Flow 流程图示" width="600" />
+
 feature功能分支用于开发特定功能，是从develop分支上分出来的，最后在合并进develop分支  
 可以采用feature-*的命名形式
 
