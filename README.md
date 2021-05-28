@@ -87,4 +87,8 @@ git branch -d release
 git push origin --delete release   
 ```
 
+Git Flow 优点是清晰可控，缺点是分支过多相对复杂，需要长期维护两个分支，一般用于各种语言和框架。  
+但是现在的web项目一般都会CI/CD，这种情况下，master分支和develop分支差别不大，没必要维护两个长期分支。
+所以可以使用Github Flow
 
+***
