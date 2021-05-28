@@ -25,7 +25,7 @@ develop·ÖÖ§ÓÃÓÚÈÕ³£¿ª·¢£¬´æ·Å×îÐÂµÄ¿ª·¢°æ±¾
 > 2. hotfix²¹¶¡·ÖÖ§
 > 3. releaseÔ¤·¢²¼·ÖÖ§
 
-<img src="./gitflow.png" alt="Git Flow Á÷³ÌÍ¼Ê¾" width="600" />
+<img src="./Images/gitflow.png" alt="Git Flow Á÷³ÌÍ¼Ê¾" width="600" />
 
 ***
 
@@ -106,3 +106,42 @@ Git Flow ÓÅµãÊÇÇåÎú¿É¿Ø£¬È±µãÊÇ·ÖÖ§¹ý¶àÏà¶Ô¸´ÔÓ£¬ÐèÒª³¤ÆÚÎ¬»¤Á½¸ö·ÖÖ§£¬Ò»°ãÓÃÓÚ¸
 ËùÒÔ¿ÉÒÔÊ¹ÓÃGithub Flow
 
 ***
+
+#### 2.Github Flow
+
+Github Flow ÊÇ Git Flow µÄ¼ò»¯°æ±¾£¬×¨ÃÅÅäºÏCI/CD£¬ËüÊÇGithubµÄ¹¤×÷Á÷³Ì  
+ËûÖ»ÓÐÒ»¸ö³¤ÆÚ·ÖÖ§`master`£¬Ïà¶ÔÓÚ Git Flow ¼òµ¥ÁËÐí¶à
+
+<img src="./Images/githubflow.png" alt="Github Flow Á÷³ÌÍ¼Ê¾" width="600" />
+
+> 1. ÏÈ´Ó`master`À­È¡ÐÂ·ÖÖ§£¬²»Çø·Ö¹¦ÄÜºÍ²¹¶¡
+> 2. ÐÂ·ÖÖ§¿ª·¢Íê³ÉºóÏò`master`·¢ÆðÒ»¸ö`Pull Request`
+> 3. Pull Request¼ÈÊÇÒ»¸öÍ¨Öª£¬ÈÃ±ðÈË×¢Òâµ½ÄãµÄÇëÇó£¬ÓÖÊÇÒ»ÖÖ¶Ô»°»úÖÆ£¬´ó¼ÒÒ»ÆðÆÀÉóºÍÌÖÂÛÄãµÄ´úÂë¡£¶Ô»°¹ý³ÌÖÐ£¬Äã»¹¿ÉÒÔ²»¶ÏÌá½»´úÂë
+> 4. ÄãµÄPull Request±»½ÓÊÜ£¬ºÏ²¢½ømaster£¬ÖØÐÂ²¿Êðºó£¬Ô­À´ÄãÀ­³öÀ´µÄÄÇ¸ö·ÖÖ§¾Í±»É¾³ý¡££¨ÏÈ²¿ÊðÔÙºÏ²¢Ò²¿É¡££©
+
+***
+
+### 3.Gitlab Flow
+
+Gitlab FLow ÊÇ Git Flow ºÍ Github Flow µÄ×ÛºÏ£¬ËüÎüÊÕÁËÁ½ÕßµÄÓÅµã£¬¼ÈÄÜÊÊÓ¦²»Í¬¿ª·¢»·¾³µÄµ¯ÐÔ£¬ÓÖÓÐµ¥Ò»Ö÷·ÖÖ§µÄ¼òµ¥ºÍ±ãÀû  
+ËüÊÇGitlab.comÍÆ¼öµÄ×ö·¨
+
+Gitlab Flow µÄ×î´óÔ­Ôò½Ð`ÉÏÓÎÓÅÏÈ`£¬Ö»´æÔÚÒ»¸ö`master`Ö÷·ÖÖ§£¬ËûÊÇËùÓÐ·ÖÖ§µÄÉÏÓÎ£¬Ö»ÓÐÉÏÓÎ·ÖÖ§²ÉÄÉµÄ¸ü¸Ä²ÅÄÜÒýÓÃµ½ÆäËû·ÖÖ§¡£
+Ëü·ÖÎªÁ½ÖÖÇé¿öÊÊÓ¦²»Í¬¿ª·¢Á÷³Ì¡£
+
+> 1. ³ÖÐø·¢²¼  
+½¨ÒéÔÚ`master`·ÖÖ§ÍâÔÙ½¨Á¢ `pre-production` ºÍ `production` £¬·Ö±ð¶ÔÓ¦¿ª·¢¡¢Ô¤·¢¡¢Éú²ú»·¾³¡£  
+ÉÏÓÎ --> ÏÂÓÎ  
+master --> pre-production --> production  
+ÀýÈçÉú²ú»·¾³³öÏÖbug£¬ÐÂ½¨Ò»¸ö·ÖÖ§ÏÈÒªºÏ²¢µ½master£¬ÔÚÖð²½`cherry-pick`µ½ÏÂÓÎ¡£  
+Ö»ÓÐ½ô¼±Çé¿ö£¬²ÅÔÊÐíÌø¹ýÉÏÓÎ£¬Ö±½ÓºÏ²¢µ½ÏÂÓÎ·ÖÖ§¡£
+
+<img src="./Images/gitlabflowcicd.png" alt="Gitlab Flow ³ÖÐø·¢²¼" width="400" />
+
+***
+
+> 2.°æ±¾·¢²¼  
+¶ÔÓÚ°æ±¾·¢²¼µÄÏîÄ¿£¬½¨Òé×ö·¨ÊÇÃ¿¸öÎÈ¶¨°æ±¾¶¼´Ó `master` ·ÖÖ§À­³öÒ»¸ö·ÖÖ§£¬Èç `v1.0.0` `v1.1.0` µÈ¡£
+ÒÔºó£¬Ö»ÓÐÐÞ¸´bug²ÅÔÊÐí½«´úÂëºÏ²¢µ½ÕâÐ©ÎÈ¶¨°æ±¾·ÖÖ§£¬²¢ÇÒÐèÒª¸üÐÂÐ¡°æ±¾ºÅ¡£
+
+<img src="./Images/gitlabflowversionpublish.png" alt="Gitlab Flow °æ±¾·¢²¼" width="400" />
