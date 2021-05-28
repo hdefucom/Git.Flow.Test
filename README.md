@@ -16,7 +16,7 @@
 > 1. master主分支
 > 2. develop开发分支
 
-master分支用于对外发布版本，所以该分支所有提交都应该具有tag并且是稳定版本；
+master分支用于对外发布版本，所以该分支所有提交都应该具有tag并且是稳定版本；  
 develop分支用于日常开发，存放最新的开发版本
 
 其次是三种短期分支
@@ -24,6 +24,22 @@ develop分支用于日常开发，存放最新的开发版本
 > 2. hotfix补丁分支
 > 3. release预发布分支
 
+feature功能分支用于开发特定功能，是从develop分支上分出来的，最后在合并进develop
+
+```git
+#创建feature分支，推送到远程仓库
+git checkout -b feature develop
+git push -u orgiin feature
+#进行功能开发。。。
+#开发完成进行合并
+git checkout develop
+git merge --no-ff feature
+#合并完成后删除分支
+git branch -d feature
+git push origin --delete feature   
+```
 
 
+
+hotfix补丁分支用于修复bug
 
