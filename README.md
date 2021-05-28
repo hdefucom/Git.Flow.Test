@@ -9,6 +9,7 @@
 > 2. Github Flow
 > 3. Gitlab Flow
 
+***
 
 #### 1.Git Flow
 
@@ -24,7 +25,8 @@ develop分支用于日常开发，存放最新的开发版本
 > 2. hotfix补丁分支
 > 3. release预发布分支
 
-feature功能分支用于开发特定功能，是从develop分支上分出来的，最后在合并进develop
+feature功能分支用于开发特定功能，是从develop分支上分出来的，最后在合并进develop分支  
+可以采用feature-*的命名形式
 
 ```git
 #创建feature分支，推送到远程仓库
@@ -39,7 +41,46 @@ git branch -d feature
 git push origin --delete feature   
 ```
 
+hotfix补丁分支用于修复bug，是从master分支上分出来的，最后在合并进master和develop分支  
+可以采用fixbug-*的命名形式
 
+```git
+#创建hotfix分支，推送到远程仓库
+git checkout -b fixbug master
+git push -u orgiin fixbug
+#进行bug修复。。。
+#修复完成进行合并
+#合并到master，版本号一般为三段，bug修复一般迭代最后一段版本号
+git checkout master
+git merge --no-ff fixbug
+git tag -a v0.1.x
+#合并到develop
+git checkout develop
+git merge --no-ff fixbug
+#合并完成后删除分支
+git branch -d fixbug
+git push origin --delete fixbug   
+```
 
-hotfix补丁分支用于修复bug
+release预发布分支用于发布正式版本前测试修复bug等工作，是从develop分支上分出来的，最后合并进master和develop分支
+可以采用release-*的命名形式
+
+```git
+#创建hotfix分支，推送到远程仓库
+git checkout -b release develop
+git push -u orgiin release
+#进行测试和bug修复。。。
+#测试修复完成进行合并
+#合并到master，版本号一般为三段，release一般迭代前两段版本号
+git checkout master
+git merge --no-ff release
+git tag -a vx.x.0
+#合并到develop
+git checkout develop
+git merge --no-ff release
+#合并完成后删除分支
+git branch -d release
+git push origin --delete release   
+```
+
 
