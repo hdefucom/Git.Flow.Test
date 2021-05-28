@@ -106,3 +106,16 @@ Git Flow ÓÅµãÊÇÇåÎú¿É¿Ø£¬È±µãÊÇ·ÖÖ§¹ý¶àÏà¶Ô¸´ÔÓ£¬ÐèÒª³¤ÆÚÎ¬»¤Á½¸ö·ÖÖ§£¬Ò»°ãÓÃÓÚ¸
 ËùÒÔ¿ÉÒÔÊ¹ÓÃGithub Flow
 
 ***
+
+
+#### 2.Github Flow
+
+Github Flow ÊÇ Git Flow µÄ¼ò»¯°æ±¾£¬×¨ÃÅÅäºÏCI/CD£¬ËüÊÇGithubµÄ¹¤×÷Á÷³Ì  
+ËûÖ»ÓÐÒ»¸ö³¤ÆÚ·ÖÖ§`master`£¬Ïà¶ÔÓÚ Git Flow ¼òµ¥ÁËÐí¶à
+
+> 1. ÏÈ´Ó`master`À­È¡ÐÂ·ÖÖ§£¬²»Çø·Ö¹¦ÄÜºÍ²¹¶¡
+> 2. ÐÂ·ÖÖ§¿ª·¢Íê³ÉºóÏò`master`·¢ÆðÒ»¸ö`Pull Request`
+> 3. Pull Request¼ÈÊÇÒ»¸öÍ¨Öª£¬ÈÃ±ðÈË×¢Òâµ½ÄãµÄÇëÇó£¬ÓÖÊÇÒ»ÖÖ¶Ô»°»úÖÆ£¬´ó¼ÒÒ»ÆðÆÀÉóºÍÌÖÂÛÄãµÄ´úÂë¡£¶Ô»°¹ý³ÌÖÐ£¬Äã»¹¿ÉÒÔ²»¶ÏÌá½»´úÂë
+> 4. ÄãµÄPull Request±»½ÓÊÜ£¬ºÏ²¢½ømaster£¬ÖØÐÂ²¿Êðºó£¬Ô­À´ÄãÀ­³öÀ´µÄÄÇ¸ö·ÖÖ§¾Í±»É¾³ý¡££¨ÏÈ²¿ÊðÔÙºÏ²¢Ò²¿É¡££©
+
+
